@@ -23,11 +23,11 @@ vector<int> moveAllNegativeElementToEnd(vector<int>);
 void printArray(vector<int>);
 
 int main(){
-    int n;
+    int n; // Enter the total number of elements
     int getVal;
     vector<int> arr;
     cin>>n;
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n;i++){ // loop to input the elements
        cin>>getVal;
        arr.push_back(getVal);
     }
@@ -37,13 +37,13 @@ int main(){
 }
 
 vector<int> moveAllNegativeElementToEnd(vector<int> arr){
-        vector<int> temp;
-        for(int i=0;i<arr.size();i++){
-            if(arr[i]>0){
+        vector<int> temp; // this is a temporary storgae to fist add the positive element and then the negative elements
+        for(int i=0;i<arr.size();i++){ // this loop is to add postive and 0 elements
+            if(arr[i]>=0){
                 temp.push_back(arr[i]);
             }
         }
-        for(int i=0;i<arr.size();i++){
+        for(int i=0;i<arr.size();i++){ // this loop is to add the negative elements
             if(arr[i]<0){
                 temp.push_back(arr[i]);
             }
@@ -51,7 +51,7 @@ vector<int> moveAllNegativeElementToEnd(vector<int> arr){
     return temp;
 }
 
-void printArray(vector<int> arr){
+void printArray(vector<int> arr){ // this function is to print the elements
     cout<<"[ ";
     for(int i=0;i<arr.size();i++){
         cout<<arr[i]<<", ";
