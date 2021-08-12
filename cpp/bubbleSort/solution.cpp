@@ -20,7 +20,7 @@ vector<int> bubbleSort(vector<int>);
 void printArray(vector<int>);
 
 int main(){
-    vector<int> unsortedArray{89,-872,2721,-2728,0,1278};
+    vector<int> unsortedArray{89,-872,2721,-2728,0,1278}; // test case , expected o/p : -2728 -872 0 89 1278 2721 
     cout<<"original array: ";printArray(unsortedArray);cout<<endl;
     cout<<"sorted array: ";  printArray(bubbleSort(unsortedArray));cout<<endl;
     return 0;
