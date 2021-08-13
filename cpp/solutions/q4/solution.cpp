@@ -23,7 +23,7 @@
 // once we encounter the element we want in the middle in this case 1 we simply increment the value of mid and do nothing i.e. mid++
 
 // when we encounter the last element we swap the current value of the array at mid and decrement the value of hi by 1 i.e. swap arr[mid] and arr[hi] and do hi--
-// NOTE: that in the case when we encounter the last element we dont increment mid
+// NOTE: that in the case when we encounter the third element we dont increment mid
 
 // The loop iterated while mid<=hi holds true
 
